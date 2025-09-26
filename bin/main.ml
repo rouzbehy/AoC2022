@@ -17,4 +17,5 @@ let () =  Arg.parse speclist anon_fun use_msg in
   match !problem_no with
     | 1 -> AoC2022.Day_1.run (read_input_file !problem_no)
     | 2 -> AoC2022.Day_2.run (read_input_file !problem_no)
+    | 3 -> AoC2022.Day_3.run (read_input_file !problem_no)
     | _ -> print_endline "Invalid option";;
